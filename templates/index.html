@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Workplace Tech Inventory</title></head>
+<body>
+<h1>Workplace Tech Inventory</h1>
+<h2>Add Device</h2>
+<form method="post" action="/add_device">
+Name: <input name="name"><br>
+Type: <input name="type"><br>
+Serial: <input name="serial"><br>
+Purchase Date: <input name="purchase_date" type="date"><br>
+<button type="submit">Add</button>
+</form>
+<h2>Devices</h2>
+<table border="1">
+<tr><th>ID</th><th>Name</th><th>Type</th><th>Serial</th><th>Purchase Date</th></tr>
+{% for d in devices %}
+<tr><td>{{ d[0] }}</td><td>{{ d[1] }}</td><td>{{ d[2] }}</td><td>{{ d[3] }}</td><td>{{ d[4] }}</td></tr>
+{% endfor %}
+</table>
+</body>
+</html>
