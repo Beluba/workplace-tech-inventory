@@ -23,7 +23,7 @@ python app.py
 Open http://localhost:5000
 
 ## Why this project
-Directly maps to my experience at Local Web: planning workplace technology requirements and coordinating purchasing of computers, software, and networking equipment.
+
 
 ## License
 MIT
